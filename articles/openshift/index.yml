@@ -45,6 +45,8 @@ landingContent:
             url: howto-create-private-cluster.md
           - text: Configure DNS Forwarding for an Azure Red Hat OpenShift 4 cluster
             url: dns-forwarding.md
+          - text: Deploy a Java application with Open Liberty on an Azure Red Hat OpenShift 4 cluster
+            url: howto-deploy-java-openliberty-app.md
 
   # Card
   - title: Reference

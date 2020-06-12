@@ -69,13 +69,13 @@ aro                                1.0.0
 
 ### Get a Red Hat pull secret (optional)
 
-A Red Hat pull secret enables your cluster to access Red Hat container registries along with additional content. This step is optional but recommended.
+A Red Hat pull secret enables your cluster to access Red Hat container registries along with additional content such as the [Open Liberty Operator](https://operatorhub.io/operator/open-liberty). This step is optional but recommended.  You must have a [Red Hat cloud account](https://www.redhat.com/en/customers) with access to the OpenShift cluster manager portal in order to perform this step.
 
 1. **[Navigate to your Red Hat OpenShift cluster manager portal](https://cloud.redhat.com/openshift/install/azure/aro-provisioned) and log in.**
 
    You will need to log in to your Red Hat account or create a new Red Hat account with your business email and accept the terms and conditions.
 
-2. **Click Download pull secret.**
+2. Select **Copy pull secret**.  This saves the secret to your clipboard.  Paste it into a file called `pull-secret.txt`.
 
 Keep the saved `pull-secret.txt` file somewhere safe - it will be used in each cluster creation.
 
