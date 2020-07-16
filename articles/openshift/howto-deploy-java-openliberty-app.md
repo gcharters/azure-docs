@@ -11,7 +11,7 @@ keywords: java, jakartaee, javaee, microprofile, open-liberty, aro, openshift, r
 
 # Deploy a Java application with Open Liberty on an Azure Red Hat OpenShift 4 cluster
 
-This guide demonstrates how to run your Java, Java EE, Jakarta EE, or MicroProfile application on the Open Liberty runtime and then deploy the containerized application to an Azure Red Hat OpenShift (ARO) 4 cluster using the Open Liberty Operator. This article will walk you through preparing an Open Liberty application, building the application Docker image and running the containerized application on an ARO 4 cluster.  The foundational elements of technology in this article include the following.
+This guide demonstrates how to run your Java, Java EE, [Jakarta EE](https://jakarta.ee/), or [MicroProfile](https://microprofile.io/) application on the Open Liberty runtime and then deploy the containerized application to an Azure Red Hat OpenShift (ARO) 4 cluster using the Open Liberty Operator. This article will walk you through preparing an Open Liberty application, building the application Docker image and running the containerized application on an ARO 4 cluster.  The foundational elements of technology in this article include the following.
 
 * [Open Liberty](https://openliberty.io): Open Liberty is an IBM Open Source project that implements the Eclipse MicroProfile specifications and is also Java/Jakarta EE compatible. Open Liberty is fast to start up with a low memory footprint and supports live reloading for quick iterative development. It is simple to add and remove features from the latest versions of MicroProfile and Java/Jakarta EE. Zero migration lets you focus on what's important, not the APIs changing under you.
 * [Azure Red Hat OpenShift](https://azure.microsoft.com/services/openshift/): Azure Red Hat OpenShift provides a flexible, self-service deployment of fully managed OpenShift clusters. Maintain regulatory compliance and focus on your application development, while your master, infrastructure, and application nodes are patched, updated, and monitored by both Microsoft and Red Hat.
@@ -309,7 +309,7 @@ Instead of using the web console GUI, you can deploy the application from the co
    oc get route
 
    NAME                 HOST/PORT                                                                PATH   SERVICES             PORT       TERMINATION   WILDCARD
-   javaee-cafe-simple   javaee-cafe-simple-open-liberty-demo.apps.aqlm62xm.rnfghf.aroapp.io          javaee-cafe-simple   9080-tcp                 None
+   javaee-cafe-simple   javaee-cafe-simple-open-liberty-demo.apps.aqlm62xm.rnfghf.aroapp.io             javaee-cafe-simple   9080-tcp                 None
    ```
 
    Once the Open Liberty application is up and running, open **HOST/PORT** of the route in your browser to visit the application home page.
